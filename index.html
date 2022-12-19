@@ -30,7 +30,7 @@
 </header>
 <div class="contenedor">
     <article>
-    <form action="/action_page.php">
+    <form action="php/index.php" method="POST">
         <h2>Datos basicos</h2><hr>
         <div class="row">
             <div class="col">
@@ -53,7 +53,6 @@
                     <input type="radio"  required  class="form-check-input" id="radio2" name="td" value="TE">
                     <label class="form-check-label" for="radio2">TE</label>
                   </div>
-
                   <div class="form-check">
                     <input type="radio"  required class="form-check-input" id="radio2" name="td" value="CE">
                     <label class="form-check-label" for="radio2">CE</label>
@@ -207,12 +206,12 @@
         <div class="col">
             <label for="td" class="form-label">¿Iniciaste tu carrera inmediatamente después de terminar el colegio?</label>
             <div class="form-check">
-                <input type="radio"  required class="form-check-input" id="radio1" name="pregunta6" value="option1" checked>Si
+                <input type="radio"  required class="form-check-input" id="radio1" name="pregunta6" value="Si" checked>Si
                 <label class="form-check-label" for="radio1"></label>
               </div>
 
               <div class="form-check">
-                <input type="radio"  required class="form-check-input" id="radio2" name="pregunta6" value="">No
+                <input type="radio"  required class="form-check-input" id="radio2" name="pregunta6" value="No">No
                 <label class="form-check-label" for="radio2"></label>
               </div>
         </div>
@@ -268,7 +267,8 @@
                 <input type="radio"  required class="form-check-input" id="radio2" name="pregunta10" value="option2">No
                 <label class="form-check-label" for="radio2"></label>
               </div>
-        </div>
+        </div><br>
+        <center><button type="submit" class="btn btn-primary">Siguiente</button></center>
     </article>
 
     <!-- <button id="btn" type="submit" class="enviar" onclick="alertar(`Felicidades has completado todo el formulario con éxito`)">Enviar respuestas</button>

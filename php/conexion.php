@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect('localhost', 'root', '', 'asdaa');
+$con = mysqli_connect('localhost', 'root', '', 'formulario');
 
 if ($con) {
     echo "ok";
