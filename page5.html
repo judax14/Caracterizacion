@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/Slider.css">
+    <link rel="stylesheet" href="./Style/menu.css">
+    <link rel="stylesheet" href="./Style/parallax.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Page 5</title>
+</head>
+<body class="fondo">
+    <header>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="./assets/img/LogoUni.jpg" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a class="active" href="#">Formulario General de ingreso</a></li>
+        </ul>
+    </nav>
+</header>
+    <div class="contenedor">
+        <article>
+            <form action="" class="formulario"  id="validationForm" name="validationForm">
+            <p>
+            <h2>Autoconocimiento</h2><hr>
+           
+            
+            <label for="">Identifica qué tanto te describen con las siguientes frases:</label><br><br>
+            <select name="pregunta95" id="" class="form-select" required>
+                <option value="1. Reconozco mis emociones y puedo expresarlas de la mejor manera">1. Reconozco mis emociones y puedo expresarlas de la mejor manera </option>
+                <option value="No me describe nada">No me describe nada</option>
+                <option value="Me describe un poco">Me describe un poco</option>
+                <option value="Me describe ocasionalmente">Me describe ocasionalmente </option>
+                <option value="Me describe casi siempre">Me describe casi siempre</option>
+                <option value="5">Me describe totalmente</option>
+            </select><br><br>
+
+            <select name="pregunta96" id="" class="form-select" required>
+                <option value="2. Expreso mis ideas, deseos y opiniones de forma clara y respetuosa">2. Expreso mis ideas, deseos y opiniones de forma clara y respetuosa</option>
+                <option value="No me describe nada">No me describe nada</option>
+                <option value="Me describe un poco">Me describe un poco</option>
+                <option value="Me describe ocasionalmente">Me describe ocasionalmente </option>
+                <option value="Me describe casi siempre">Me describe casi siempre</option>
+                <option value="Me describe totalmente">Me describe totalmente</option>
+            </select><br><br>
+
+            <select name="pregunta97" id="" class="form-select" required>
+                <option value="3. Me adapto fácilmente a las nuevas situaciones">3. Me adapto fácilmente a las nuevas situaciones</option>
+                <option value="No me describe nada">No me describe nada</option>
+                <option value="Me describe un poco">Me describe un poco</option>
+                <option value="Me describe ocasionalmente">Me describe ocasionalmente </option>
+                <option value="Me describe casi siempre">Me describe casi siempre</option>
+                <option value="Me describe totalmente">Me describe totalmente</option>
+            </select><br><br>
+
+            <select name="pregunta98" id="" class="form-select" required>
+                <option value="4. Suelo estar tranquilo">4. Suelo estar tranquilo</option>
+                <option value="No me describe nada">No me describe nada</option>
+                <option value="Me describe un poco">Me describe un poco</option>
+                <option value="Me describe ocasionalmente">Me describe ocasionalmente </option>
+                <option value="Me describe casi siempre">Me describe casi siempre</option>
+                <option value="Me describe totalmente">Me describe totalmente</option>
+            </select><br><br>
+
+            <select name="pregunta99" id="" class="form-select" required>
+                <option value="5. Me describe totalmente. Me es fácil relacionarme con mis compañeros">5. Me describe totalmente. Me es fácil relacionarme con mis compañeros</option>
+                <option value="No me describe nada">No me describe nada</option>
+                <option value="Me describe un poco">Me describe un poco</option>
+                <option value="Me describe ocasionalmente">Me describe ocasionalmente </option>
+                <option value="Me describe casi siempre">Me describe casi siempre</option>
+                <option value="Me describe totalmente">Me describe totalmente</option>
+            </select><br><br>
+
+            <select name="pregunta100" id="" class="form-select" required>
+                <option value="6. Suelo estar agresivo o enojado">6. Suelo estar agresivo o enojado</option>
+                <option value="No me describe nada">No me describe nada</option>
+                <option value="Me describe un poco">Me describe un poco</option>
+                <option value="Me describe ocasionalmente">Me describe ocasionalmente </option>
+                <option value="Me describe casi siempre">Me describe casi siempre</option>
+                <option value="Me describe totalmente">Me describe totalmente</option>
+            </select><br><br>
+
+            <label for="El área de bienestar tiene el servicio de orientación psicopedagógica donde te brindan acompañamientos personal y académico ¿te gustaría participar en este proceso y que uno de nuestros psicólogos se comunique contigo?">El área de bienestar tiene el servicio de orientación psicopedagógica donde te brindan acompañamientos personal y académico ¿te gustaría participar en este proceso y que uno de nuestros psicólogos se comunique contigo?</label>
+            <label for="Si" >Si</label>
+            <input type="radio" name="pregunta101" id="" class="radioButtonP" value="Si" required>
+            <label for="No">No</label>
+            <input type="radio" name="pregunta101" id="" class="radioButtonP" value="No" required><br><br>
+
+            <label for="texto">En el siguiente espacio puede ampliar sus respuestas y plantear sugerencias a UniEm; agradecemos sus aportes, ¡feliz día!.</label>
+                <input class="sinFase" type="text" id="texto" name="pregunta102" onkeyup="validar()" onblur="validar()" / placeholder="Escribe aquí" required/>
+                <div id="message" style="position: absolute; left: 0px; top: 50px; background-color: Yellow; z-index: 0" hidden>
+                  </div>
+            <br><br>
+
+            <select name="pregunta103" id="" class="form-select" required>
+                <option value="Comprendo y me es facil acatar las normas en los grupos sociales (colegio, casa, universidad, empresa)">Comprendo y me es facil acatar las normas en los grupos sociales (colegio, casa, universidad, empresa)</option>
+                <option value="Muy frecuente">Muy frecuente</option>
+                <option value="Frecuentemente">Frecuentemente</option>
+                <option value="Ocasioalmente">Ocasioalmente</option>
+                <option value="Raramente">Raramente</option>
+                <option value="Nunca">Nunca</option>
+            </select><br><br>
+
+            <select name="pregunta104" id="" class="form-select" required>
+                <option value="Cumplo las normas porque estoy convencido que tienen un sentido para mi vida y no por temor a ser sancionado">Cumplo las normas porque estoy convencido que tienen un sentido para mi vida y no por temor a ser sancionado</option>
+                <option value="Muy frecuente">Muy frecuente</option>
+                <option value="Frecuentemente">Frecuentemente</option>
+                <option value="Ocasioalmente">Ocasioalmente</option>
+                <option value="Raramente">Raramente</option>
+                <option value="Nunca">Nunca</option>
+            </select><br><br>
+            
+            <select name="pregunta105" id="" class="form-select" required>
+                <option value="Lo importante al saltarme una norma es que no me pillen">Lo importante al saltarme una norma es que no me pillen</option>
+                <option value="Muy importante">Muy importante</option>
+                <option value="importante">importante</option>
+                <option value="moderadamente importante">moderadamente importante</option>
+                <option value="de poca importancia">de poca importancia</option>
+                <option value="sin importancia">sin importancia</option>
+            </select><br><br>
+
+            <select name="pregunta106" id="" class="form-select" required>
+                <option value="Cuando me trazo una tarea u objetivo, lo logro...">Cuando me trazo una tarea u objetivo, lo logro...</option>
+                <option value="Muy frecuente">Muy frecuente</option>
+                <option value="Frecuentemente">Frecuentemente</option>
+                <option value="Ocasioalmente">Ocasioalmente</option>
+                <option value="Raramente">Raramente</option>
+                <option value="Nunca">Nunca</option>
+            </select><br><br>
+
+            <select name="pregunta107" id="" class="form-select" required>
+                <option value="Conozco las condiciones de la etapa de coformación en Uniempresarial">Conozco las condiciones de la etapa de coformación en Uniempresarial</option>
+                <option value="Muy frecuente">Muy frecuente</option>
+                <option value="Frecuentemente">Frecuentemente</option>
+                <option value="Ocasioalmente">Ocasioalmente</option>
+                <option value="Raramente">Raramente</option>
+                <option value="Nunca">Nunca</option>
+            </select><br><br>
+
+            <select name="pregunta108" id="" class="form-select" required>
+                <option value="Antes de presentar una entrevista, me preocupo por buscar información sobre la organización?">Antes de presentar una entrevista, me preocupo por buscar información sobre la organización?</option>
+                <option value="Muy frecuente">Muy frecuente</option>
+                <option value="Frecuentemente">Frecuentemente</option>
+                <option value="Ocasioalmente">Ocasioalmente</option>
+                <option value="Raramente">Raramente</option>
+                <option value="Nunca">Nunca</option>
+            </select><br><br>
+
+            <select name="pregunta109" id="" class="form-select" required>
+                <option value="Cuido mi presentacion personal al momento de desenvolverne en un entorno empresarial">Cuido mi presentacion personal al momento de desenvolverne en un entorno empresarial</option>
+                <option value="Muy frecuente">Muy frecuente</option>
+                <option value="Frecuentemente">Frecuentemente</option>
+                <option value="Ocasioalmente">Ocasioalmente</option>
+                <option value="Raramente">Raramente</option>
+                <option value="Nunca">Nunca</option>
+            </select><br><br>
+
+            <select name="pregunta110" id="" class="form-select" required>
+                <option value="Cuando llego a un nuevo proyecto o lugar de trabajo, me intereso por conocer muy bien mis funciones y/o responsabilidades">Cuando llego a un nuevo proyecto o lugar de trabajo, me intereso por conocer muy bien mis funciones y/o responsabilidades</option>
+                <option value="Muy frecuente">Muy frecuente</option>
+                <option value="Frecuentemente">Frecuentemente</option>
+                <option value="Ocasioalmente">Ocasioalmente</option>
+                <option value="Raramente">Raramente</option>
+                <option value="Nunca">Nunca</option>
+            </select><br><br>
+
+            <select name="pregunta111" id="" class="form-select" required>
+                <option value="cuando tengo dificultades en un entorno, suelo buscar a la persona encargada y plantearle lo que me está pasando">cuando tengo dificultades en un entorno, suelo buscar a la persona encargada y plantearle lo que me está pasando</option>
+                <option value="Muy frecuente">Muy frecuente</option>
+                <option value="Frecuentemente">Frecuentemente</option>
+                <option value="Ocasioalmente">Ocasioalmente</option>
+                <option value="Raramente">Raramente</option>
+                <option value="Nunca">Nunca</option>
+            </select><br><br>
+
+            <select name="pregunta112" id="" class="form-select" required>
+                <option value="Cuando llego nuevo a algún lugar, me intereso por conocer las personas y los roles que tienen en su interacción conmigo">Cuando llego nuevo a algún lugar, me intereso por conocer las personas y los roles que tienen en su interacción conmigo</option>
+                <option value="Muy frecuente">Muy frecuente</option>
+                <option value="Frecuentemente">Frecuentemente</option>
+                <option value="Ocasioalmente">Ocasioalmente</option>
+                <option value="Raramente">Raramente</option>
+                <option value="Nunca">Nunca</option>
+            </select><br><br>
+
+            <select name="pregunta113" id="" class="form-select" required>
+                <option value="Cuando encuentro un problema o dificultad en un proyecto, busco alternativas y propongo posibles soluciones">Cuando encuentro un problema o dificultad en un proyecto, busco alternativas y propongo posibles soluciones</option>
+                <option value="Muy frecuente">Muy frecuente</option>
+                <option value="Frecuentemente">Frecuentemente</option>
+                <option value="Ocasioalmente">Ocasioalmente</option>
+                <option value="Raramente">Raramente</option>
+                <option value="Nunca">Nunca</option>
+            </select><br><br>
+
+            <label for="¿Elegiste este programa como tu primera opción para la formación superior?">¿Elegiste este programa como tu primera opción para la formación superior?</label>
+            <label style="margin-left: 5px;" for="Si">Si</label>
+            <input type="radio" name="pregunta114" id="" class="radioButtonE" value="Si" required>
+            <label for="No">No</label>
+            <input type="radio" name="pregunta114" id="" class="radioButtonE" value="No" required><br><br>
+
+            <select name="pregunta115" id="" class="form-select" required>
+                <option value="conozco el contenido (materias) del programa que elegí">conozco el contenido (materias) del programa que elegí</option>
+                <option value="totalmente">totalmente</option>
+                <option value="En gran medida">En gran medida</option>
+                <option value="Medianamente">Medianamente</option>
+                <option value="Poco">Poco</option>
+                <option value="Nada">Nada</option>
+            </select><br><br>
+
+            <select name="pregunta116" id="" class="form-select" required>
+                <option value="Al momento de elegir carrera profesional, lo mas importante fue mi propio interés y voluntad">Al momento de elegir carrera profesional, lo mas importante fue mi propio interés y voluntad</option>
+                <option value="totalmente de acuerdo">totalmente de acuerdo</option>
+                <option value="De acuerdo">De acuerdo</option>
+                <option value="Indeciso">Indeciso</option>
+                <option value="En desacuerdo">En desacuerdo</option>
+                <option value="totalmente en desacuerdo">totalmente en desacuerdo</option>
+            </select><br><br>
+
+            <label for="¿Realizaste proceso de orientación vocacional para la elección de tu carrera">¿Realizaste proceso de orientación vocacional para la elección de tu carrera</label>
+            <label style="margin-left: 5px;" for="Si">Si</label>
+            <input type="radio" name="pregunta117" id="" class="radioButtonE" value="Si" required>
+            <label for="No">No</label>
+            <input type="radio" name="pregunta117" id="" class="radioButtonE" value="No" required><br><br>
+             </article>
+            <article>
+                <h2>Conocimiento</h2><hr>
+
+            <select name="pregunta118" id="" class="form-select" required>
+                <option value="Para elegir este programa, tuve la oportunidad de conversar con personas graduadas que me compartieron información valiosa para tomar mi desición">Para elegir este programa, tuve la oportunidad de conversar con personas graduadas que me compartieron información valiosa para tomar mi desición</option>
+                <option value="">Muy Frecuentemente</option>
+                <option value="Frecuentemente">Frecuentemente</option>
+                <option value="Ocasioalmente">Ocasioalmente</option>
+                <option value="Raramente">Raramente</option>
+                <option value="Nunca">Nunca</option>
+            </select><br><br>
+
+            <select name="pregunta119" id="" class="form-select" required>
+                <option value="Cuento con las habildades personales o aprendizajes que facilitan el desarrollo del programa que elegi">Cuento con las habildades personales o aprendizajes que facilitan el desarrollo del programa que elegi</option>
+                <option value="">totalmente</option>
+                <option value="En gran medida">En gran medida</option>
+                <option value="Medianamente">Medianamente</option>
+                <option value="Poco">Poco</option>
+                <option value="Nada">Nada</option>
+            </select><br><br>
+
+            <select name="pregunta120" id="" class="form-select" required>
+                <option value="He tenido experiencias agradables y positivas relacionadas con el programa que escogi">He tenido experiencias agradables y positivas relacionadas con el programa que escogi</option>
+                <option value="Muy Frecuentemente">Muy Frecuentemente</option>
+                <option value="Frecuentemente">Frecuentemente</option>
+                <option value="Ocasioalmente">Ocasioalmente</option>
+                <option value="Raramente">Raramente</option>
+                <option value="Nunca">Nunca</option>
+            </select><br><br>
+</p> 
+        </article>
+        <article>
+            <!--Estructura de los botones de envio de preguntas, los cuales contiene un script de javascript el cual genera una alerta a la hora de enviar las preguntas para la confirmacion de su envio-->
+    
+        <button id="btn" type="submit" class="enviar" onclick="alertar(`Felicidades has completado todo el formulario con éxito`)">Enviar respuestas</button>
+        
+
+        
+        <script type="text/javascript">
+            function alertar(texto) {
+               alert(texto);
+            }
+        </script>
+    <script>
+        location.href="Page2.html"
+    </script>
+    <script type="text/javascript"charset="utf-8" >
+            var btn = document.getElementById('btn');
+            var btn2 = document.getElementById('btn2');
+    btn.addEventListener('click', e=>{btn2.style='visibility:visible;'},'click',);
+    
+    
+    
+    </script>
+</article>
+
+<article class="Diseño">
+ 
+    <a href="index.html">
+    <button>
+        
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        1
+    </button>
+    </a>
+
+    <a href="page1.html">
+    <button>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        2
+    </button>
+    </a>
+
+    <a href="page2.html">
+    <button>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        3
+    </button>
+    </a>
+
+        <a href="page3.html">
+    
+        <button>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        4
+    </button>
+    </a>
+    <a href="page4.html">
+    
+    <button>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        5
+    </button>
+    </a>
+    <a href="page5.html">
+    
+        <button>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            6
+        </button>
+        </a>
+    
+    
+ 
+</article>
+ </form>
+ 
+
+
+
+     
+  
+    </div>
+    <script src="./Script/Validaciones.js"></script>
+</body>
+</html> 

@@ -1,0 +1,53 @@
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family:helvetica, arial, sans-serif;
+	line-height:20px;
+}
+
+.contenedor {
+	width: 90%;
+	max-width:900px;
+	margin:auto;
+	background-color: white;
+    
+}
+
+article {
+	background:rgba(255, 255, 255, 0.9);
+	padding:20px;
+	margin:20px 0;
+	color:rgb(2, 0, 0);
+	box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
+}
+
+article h2 {
+	color:rgb(7, 7, 7);
+}
+article h3 {
+	color:rgb(7, 7, 7);
+}
+
+article hr {
+	background:#020202;
+	height:5px;
+	border:none;
+}
+
+article p {
+	line-height: 25px;
+}
+
+article h2, article p, article hr {
+	margin-bottom: 20px;
+}
+.inscrito{
+	width: 50%;
+}
+
